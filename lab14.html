@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style01.css">
+</head>
+<body>
+    <header>
+        <h1 id="user">Username</h1>
+        <div class="profile" id="profile">
+            <div class="notify"><p>1</p></div>
+        <div>
+    </header>
+    <div class="inputs">
+        <div class="box">
+            <label>Set Username</label><input type="text" id="name"><button onclick="setName()">set</button>
+        </div>
+        <div class="box">
+            <label>Set profile</label><input type="text" id="setpro"><button onclick="setImg()">set</button>
+        </div>
+
+
+
+    </div>
+    <div class="container">
+    </div>
+
+
+    <script src="what.js">
+        const Username = document.getElementById("user");
+        const input = document.getElementById("setpro");
+        const profile = document.getElementById("profile")
+        const newdiv = document.getElementsByClassName("container")[0];
+
+        function setName() {
+            Username.textContent = input.value
+        }
+        function setImg() {
+            profile.style.backgroundImage = "url(" + input.value +")"
+            console.log(input.value);
+            input.value = "";
+        }
+        function addParagrap() {
+            const newpara = document.createElement("p");
+            newpara.textContent = "new paragraph";
+            newdiv.appendChild(newpara);
+        }
+    </script>
+</body>
+</html>
