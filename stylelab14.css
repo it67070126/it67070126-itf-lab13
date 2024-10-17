@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", sans-serif;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    a:hover {
+        color: rgb(32, 122, 233);
+        text-decoration: underline;
+    }
+    h1 {
+        margin-bottom: 1rem;;
+    }
+    .frame {
+        position: relative;
+        border: black solid 1px;
+        /* border-radius: 100%; */
+        background-color: bisque;
+        width: 183px;
+        height: 183px;
+        border-radius: 50%;
+        /* border: black solid 1px; */
+        .notify{
+            display: flex;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: red;
+            position: absolute;
+            bottom: 3px;
+            right: 20px;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+    }
+    .image {
+        width: 183px;
+        height: 183px;
+        object-fit: cover;
+        border: black solid 1px;
+        border-radius: 50%;
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .set-user, .set-image, .set-phone{
+        margin-top: 1rem;
+        display: flex;
+        gap: 10px;
+        button {
+            border-style: none;
+            border-radius: 5px;
+            padding: 2px 10px;
+            cursor: pointer;
+            background-color: rgb(88, 137, 250);
+            color: white;
+        }
+        button:hover {
+            background-color: rgba(88, 137, 250, 0.849);
+        }
+        input {
+            border-style: none;
+            padding: 0 8px;
+            background-color: rgba(128, 128, 128, 0.118);
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+    }
+}
+
+.container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+
+    table {
+        .field {
+            background-color: gray;
+        }
+    }
+}
+
+table {
+
+    .table-num {
+        width: 60px;
+    }
+    .table-name {
+        width: 300px;
+    }
+    .table-phone {
+        width: 150px;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+}
+
+th {
+    background-color: #ccc;
+}

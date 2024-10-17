@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylelab14.css">
+    <title>itf-lab14</title>
+</head>
+
+<body>
+    <header>
+        <a href="https://github.com/it67070126">
+            <h1 id="profile-name">67070126 Pattaradanai Supalaklertkul</h1>
+        </a>
+        <div class="frame">
+            <img class="image" id="profile-img" src="ely itf.png" alt="image">
+            <div class="notify">
+                <p>1</p>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="set-user">
+            <label>Set the Username</label>
+            <input id="name" type="text" placeholder="Enter Username">
+            <button onclick="editName()">set</button>
+        </div>
+        <div class="set-image">
+            <label>Set the profile image URL</label>
+            <input id="profile" type="text" placeholder="Enter Image URL">
+            <button onclick="editImage()">set</button>
+        </div>
+    </section>
+
+    <section style="margin-top: 10px;">
+        <h3>Phone Number List</h3>
+        <div class="set-phone">
+            <input id="add-name" type="text" placeholder="Name">
+            <input id="add-tel" type="text" placeholder="Tel">
+            <button onclick="updateRow()">ADD</button>
+            <button onclick="saveCSV()">EXPORT</button>
+        </div>
+    </section>
+
+    <div class="container">
+        <table id="my-table">
+            <tr>
+                <th class="table-num">No.</th>
+                <th class="table-name">Name</th>
+                <th class="table-phone">Phone Number</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="lab14java.js"></script>
+</body>
+
+</html>
